@@ -1,0 +1,78 @@
+#player {
+    background-color: rgb(30, 30, 30);
+    display: inline-block;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
+
+img {
+    background-color: rgb(70, 70, 70);
+}
+/* Sudo class */
+img:hover {
+    background-color: rgb(50, 170, 220);
+    }
+img, #pbar-container, #sbar-container { /* These are clickable elements */
+    cursor: pointer;
+
+}
+
+/* The Container */
+#video-container {
+    width: 640px;
+    height: 360px;
+}
+    video { /* all videos are getting resized to parent container */
+        height: 100%;
+        width: 100%;
+    }
+
+#pbar-container {
+    margin-top: 2px;
+    background-color: rgb(70, 70, 70);
+    padding-bottom: 2px;
+}
+    #pbar {
+        height: 5px;
+        width: 0%;
+        background-color: rgb(50, 170, 220);
+    }
+
+#buttons-container {
+    height: 50px;
+}
+
+    #buttons-container > * { /* All of the child elements are selected here */
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin: 0 10px;
+    }
+
+    #time-field {
+        color: rgb(50, 170, 220);
+        line-height: 50px;
+        cursor: default;
+    }
+
+    #sound-button {
+        margin-right: 0;
+    }
+    #sbar-container {
+        margin-left: 0;
+        width: 100px;
+        height: 5px;
+        background: rgb(70, 70, 70);
+    }
+
+    #sbar {
+        height: 100%;
+        width: 50%;
+        background-color: rgb(50, 170, 220);
+    }
+
+    #fullscreen-button {
+        float: right;
+    }

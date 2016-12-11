@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="player.css">
+    <script type="text/javascript" src="player.js"></script>
+</head>
+
+<body>
+    <div id="player">
+        <div id="video-container">
+            <video id="video" poster="images/thumbnail.png">
+                <source src="video/sample.mp4">
+                    It seems your browser does not support the HTML5 video tag. Please update it!
+                </video>
+        </div>
+
+        <div id="pbar-container">
+            <!-- progress bar container -->
+            <div id="pbar"></div>
+        </div>
+
+        <div id="buttons-container">
+            <img id="play-button" src="images/play.png">
+            <div id="time-field">
+                0:00 / 0:00
+            </div>
+            <img id="sound-button" src="images/sound.png">
+            <div id="sbar-container"> <!-- sound bar container -->
+                <div id="sbar"></div>
+            </div>
+            <img id="fullscreen-button" src="images/fullscreen.png">
+        </div>
+</body>
+
+</html>
