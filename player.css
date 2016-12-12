@@ -36,6 +36,13 @@ img, #pbar-container, #sbar-container { /* These are clickable elements */
         line-height: 360px;
         text-align: center;
         position: absolute;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+52,000000+100&0.04+5,0.65+83 */
+        background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.04) 5%, rgba(0,0,0,0.41) 52%, rgba(0,0,0,0.65) 83%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.04) 5%,rgba(0,0,0,0.41) 52%,rgba(0,0,0,0.65) 83%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, rgba(0,0,0,0.04) 5%,rgba(0,0,0,0.41) 52%,rgba(0,0,0,0.65) 83%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+
     }
 
         #screen img {

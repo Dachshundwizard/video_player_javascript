@@ -2,6 +2,9 @@ window.addEventListener('load', function() {
 
     // Video Container
     video = document.getElementById('video'); //Using video element from the HTML file
+    pauseScreen = document.getElementById('screen');
+    screenButton = document.getElementById('1button');
+
 
     // Progress Bar Container
     pbarContainer = document.getElementById('pbar-container');
@@ -24,6 +27,7 @@ window.addEventListener('load', function() {
         soundButton.addEventListener('click', muteOrUnmute, false);
         sbarContainer.addEventListener('click', changeVolume, false); // This will listen for a click on the sound bar, and will change the volume acordingly
         fullscreenButton.addEventListener('click', fullscreen, false);
+        screenButton.addEventListener('click', playOrPause, false); // Clicking the button will cause video to play, using same function
 
     }, false);
 
@@ -34,10 +38,14 @@ function playOrPause() {
         video.play();
         playButton.src = 'images/pause.png';
         update = setInterval(updatePlayer, 30);
+
+        pauseScreen.style.display = 'none';
     } else {
         video.pause();
         playButton.src = 'images/play.png';
         window.clearInterval(update);
+
+        pauseScreen.style.display = 'block';
     }
 }
 
